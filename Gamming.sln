@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GammingCipher", "GammingCipher\GammingCipher.csproj", "{2A4E7D18-4A98-4947-86FF-0193582C8E5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GammingWithGenerator", "GammingWithGenerator\GammingWithGenerator.csproj", "{3B441003-C267-46E5-9BF1-F0A1BCD92FE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base", "Base\Base.csproj", "{61D70B72-6A0D-4739-8FB2-B58C4D37917C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.1", "5.1\5.1.csproj", "{0A708F6A-58DA-41E0-8C79-07E013A2287F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSA", "RSA\RSA.csproj", "{70FC881E-2FCF-467B-B0E3-56B5C2B02271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSA.Hack.QSM", "HackRSA.QSM\RSA.Hack.QSM.csproj", "{450FA116-67DB-4A46-8D9D-BDDDB2C8C935}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A4E7D18-4A98-4947-86FF-0193582C8E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4E7D18-4A98-4947-86FF-0193582C8E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4E7D18-4A98-4947-86FF-0193582C8E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4E7D18-4A98-4947-86FF-0193582C8E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B441003-C267-46E5-9BF1-F0A1BCD92FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B441003-C267-46E5-9BF1-F0A1BCD92FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B441003-C267-46E5-9BF1-F0A1BCD92FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B441003-C267-46E5-9BF1-F0A1BCD92FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D70B72-6A0D-4739-8FB2-B58C4D37917C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D70B72-6A0D-4739-8FB2-B58C4D37917C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D70B72-6A0D-4739-8FB2-B58C4D37917C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D70B72-6A0D-4739-8FB2-B58C4D37917C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A708F6A-58DA-41E0-8C79-07E013A2287F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A708F6A-58DA-41E0-8C79-07E013A2287F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A708F6A-58DA-41E0-8C79-07E013A2287F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A708F6A-58DA-41E0-8C79-07E013A2287F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FC881E-2FCF-467B-B0E3-56B5C2B02271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FC881E-2FCF-467B-B0E3-56B5C2B02271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FC881E-2FCF-467B-B0E3-56B5C2B02271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FC881E-2FCF-467B-B0E3-56B5C2B02271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450FA116-67DB-4A46-8D9D-BDDDB2C8C935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450FA116-67DB-4A46-8D9D-BDDDB2C8C935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450FA116-67DB-4A46-8D9D-BDDDB2C8C935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450FA116-67DB-4A46-8D9D-BDDDB2C8C935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7601E894-D392-45E7-A1A0-B849F433A0EC}
+	EndGlobalSection
+EndGlobal

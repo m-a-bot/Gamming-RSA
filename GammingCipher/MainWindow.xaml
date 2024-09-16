@@ -1,0 +1,142 @@
+﻿<Window
+    x:Class="GammingCipher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GammingCipher"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="800"
+    d:DataContext="{d:DesignInstance Type=local:ViewModel}"
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
+    <Grid>
+
+
+        <RadioButton
+            x:Name="RusLanguage"
+            Width="91"
+            Height="20"
+            Margin="143,37,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Русский"
+            IsChecked="True" />
+
+        <RadioButton
+            x:Name="EngLanguage"
+            Width="91"
+            Height="20"
+            Margin="29,37,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Английский"
+            IsChecked="False" />
+
+        <TextBox
+            x:Name="SourceText"
+            Width="736"
+            Height="44"
+            Margin="29,106,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Path=SourceText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"
+            TextWrapping="Wrap" />
+
+
+        <TextBox
+            x:Name="BinarySourceText"
+            Width="736"
+            Height="53"
+            Margin="29,166,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="WhiteSmoke"
+            IsReadOnly="True"
+            Text="{Binding Path=BinarySourceText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+            TextWrapping="Wrap" />
+        <Label
+            Width="102"
+            Height="34"
+            Margin="29,67,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Исходный текст" />
+        <TextBox
+            x:Name="Key"
+            Width="736"
+            Height="43"
+            Margin="29,250,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Path=Key, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="BinaryKey"
+            Width="736"
+            Height="63"
+            Margin="29,320,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="WhiteSmoke"
+            IsReadOnly="True"
+            Text="{Binding Path=BinaryKey, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+            TextWrapping="Wrap" />
+        <Button
+            Width="101"
+            Height="42"
+            Margin="346,392,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnEncrypt_Click"
+            Content="Зашифровать" />
+        <Button
+            x:Name="BtnDecrypt"
+            Width="102"
+            Height="42"
+            Margin="346,517,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnDecrypt_Click"
+            Content="Расшифровать" />
+        <TextBox
+            x:Name="EncryptedText"
+            Width="736"
+            Height="43"
+            Margin="29,459,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightSalmon"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="BinaryDecryptedText"
+            Width="736"
+            Height="57"
+            Margin="29,586,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightSalmon"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="DecryptedText"
+            Width="736"
+            Height="77"
+            Margin="29,680,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightSalmon"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <Label
+            Width="102"
+            Height="34"
+            Margin="29,216,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Ключ" />
+
+    </Grid>
+</Window>
